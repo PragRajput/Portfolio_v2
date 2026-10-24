@@ -148,6 +148,16 @@ export const PROJECTS = [
     palette: ['#03140f', '#0f766e', '#5eead4', '#f0fdfa'],
   },
   {
+    id: 'p21',
+    title: 'Tracely: Web Analytics with AI Insights',
+    description: 'Self-hosted web analytics platform with AI insights. A single script tag tracks sessions, page and section views, clicks, scroll depth, form submits/abandons, logins and JS errors on any website, plus rage-click and dead-click detection for UX friction. Real-time dashboard over Socket.io with Recharts visualizations, and Claude generates written insights from the collected data. Dependency-free vanilla JS tracker, JWT-authenticated multi-project dashboard. Deployed on EC2 (API), S3 and CloudFront.',
+    technologies: ['Node.js', 'Express', 'MongoDB', 'Socket.io', 'React', 'Vite', 'Recharts', 'Claude API', 'JWT', 'AWS EC2', 'S3', 'CloudFront'],
+    demoUrl: 'https://d1u3ng3n6cixi8.cloudfront.net/',
+    personal: true,
+    featured: true,
+    palette: ['#08121c', '#0369a1', '#7dd3fc', '#f0f9ff'],
+  },
+  {
     id: 'p20',
     title: 'Memento: Browser Video Editor',
     description: 'Studio-grade video editor that runs 100% client-side in the browser; media never leaves your machine. Multi-track timeline (video layers, audio lanes, overlays, titles) with frame-accurate trimming and splitting, 13 transitions, keyframe animation, color grading presets, Web Audio effects, lower thirds and visual FX overlays. Auto-saves projects to IndexedDB with full undo/redo, and exports hardware-accelerated MP4 (H.264, HEVC, VP9, AV1) via WebCodecs.',
