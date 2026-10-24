@@ -148,6 +148,16 @@ export const PROJECTS = [
     palette: ['#03140f', '#0f766e', '#5eead4', '#f0fdfa'],
   },
   {
+    id: 'p20',
+    title: 'Memento: Browser Video Editor',
+    description: 'Studio-grade video editor that runs 100% client-side in the browser; media never leaves your machine. Multi-track timeline (video layers, audio lanes, overlays, titles) with frame-accurate trimming and splitting, 13 transitions, keyframe animation, color grading presets, Web Audio effects, lower thirds and visual FX overlays. Auto-saves projects to IndexedDB with full undo/redo, and exports hardware-accelerated MP4 (H.264, HEVC, VP9, AV1) via WebCodecs.',
+    technologies: ['React 19', 'TypeScript', 'Vite', 'WebCodecs', 'Mediabunny', 'Web Audio API', 'IndexedDB', 'GitHub Pages'],
+    demoUrl: 'https://pragrajput.github.io/Memento-Pro-Studio/',
+    personal: true,
+    featured: true,
+    palette: ['#0c0a14', '#6d28d9', '#c4b5fd', '#faf5ff'],
+  },
+  {
     id: '1',
     title: 'Synker: Integration Automation Platform',
     description: 'Webhook-driven workflow engine for real-time CRM/ERP sync across 13 connectors, including HubSpot, Salesforce, NetSuite, QuickBooks, Xero, Zoho, Close CRM, and Cin7. Workflows are defined as typed step graphs (get_record, lookup, branch, iterate, update_record) scoped per connection, preventing O(n) webhook fan-out. Ships a conversational AI builder (Claude) backed by a provider knowledge base encoding connector field paths, upsert patterns, and failure modes. Includes end-to-end bidirectional HubSpot ↔ QuickBooks sync with QB invoice write-back and loop-guard branch patterns. Custom HubSpot property detection surfaces missing fields before they silently fail at runtime. BullMQ + Redis for async processing with retry; OAuth 2.0 token refresh handled transparently per connector.',
