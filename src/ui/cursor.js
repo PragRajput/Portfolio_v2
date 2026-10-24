@@ -19,8 +19,8 @@ export default class Cursor {
     // dot tracks the pointer 1:1, the ring trails just slightly
     const dx = gsap.quickSetter(this.dot, 'x', 'px');
     const dy = gsap.quickSetter(this.dot, 'y', 'px');
-    const rx = gsap.quickTo(this.ring, 'x', { duration: 0.22, ease: 'power3' });
-    const ry = gsap.quickTo(this.ring, 'y', { duration: 0.22, ease: 'power3' });
+    const rx = gsap.quickTo(this.ring, 'x', { duration: 0.12, ease: 'power3' });
+    const ry = gsap.quickTo(this.ring, 'y', { duration: 0.12, ease: 'power3' });
 
     addEventListener('pointermove', (e) => {
       if (e.pointerType !== 'mouse') return;
