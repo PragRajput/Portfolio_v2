@@ -1783,7 +1783,7 @@ main {
 .modal__panel {
   position: relative;
   width: min(700px, 100%);
-  max-height: min(88vh, 920px);
+  max-height: min(94vh, 920px);
   overflow-y: auto;
   overscroll-behavior: contain;
   border: 1px solid var(--line-2);
@@ -1824,7 +1824,7 @@ main {
 }
 .pm__art {
   position: relative;
-  height: 190px;
+  height: 96px;
   overflow: hidden;
   background:
     radial-gradient(70% 120% at 18% 0%, var(--c3) 0%, transparent 60%),
@@ -1841,7 +1841,7 @@ main {
 .pm__art span {
   position: absolute;
   left: 28px;
-  bottom: 18px;
+  bottom: 12px;
   z-index: 1;
   font-size: 12px;
   color: rgba(255, 255, 255, 0.75);
@@ -1858,12 +1858,12 @@ main {
   z-index: 0;
 }
 .pm__content {
-  padding: 26px 28px 30px;
+  padding: 18px 28px 22px;
 }
 .pm__title {
-  margin-top: 16px;
+  margin-top: 12px;
   font-weight: 800;
-  font-size: clamp(28px, 3.4vw, 42px);
+  font-size: clamp(26px, 3vw, 36px);
   line-height: 1.02;
   letter-spacing: -0.045em;
 }
@@ -1876,13 +1876,13 @@ main {
   color: var(--fg-2);
 }
 .pm__desc {
-  margin-top: 18px;
-  font-size: 15px;
-  line-height: 1.75;
+  margin-top: 12px;
+  font-size: 14.5px;
+  line-height: 1.6;
   color: var(--fg-2);
 }
 .pm .label-sm {
-  margin: 26px 0 12px;
+  margin: 18px 0 10px;
 }
 .pm .chip {
   font-size: 12px;
@@ -1891,7 +1891,7 @@ main {
 .pm__foot {
   display: flex;
   justify-content: flex-end;
-  margin-top: 28px;
+  margin-top: 20px;
 }
 
 .cf {
