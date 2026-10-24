@@ -13,17 +13,7 @@ npm install
 npm run dev      # Local dev server -> http://localhost:5173
 npm run build    # Production build -> dist/
 npm run preview  # Preview production build locally
-npm run deploy   # Builds & deploys directly to AWS S3 + CloudFront
 ```
-
----
-
-## Production Deployment (AWS)
-
-- **Live URL**: [https://d5mc1bhs7lp3i.cloudfront.net](https://d5mc1bhs7lp3i.cloudfront.net)
-- **S3 Bucket**: `prag-portfolio-453393997723` (`ap-southeast-2`)
-- **CloudFront Distribution ID**: `E1GA0LZUSAZA5U`
-- **Origin Access Control (OAC)**: `E386JKWRSGCNPU` (`prag-portfolio-oac`)
 
 ---
 
@@ -31,7 +21,7 @@ npm run deploy   # Builds & deploys directly to AWS S3 + CloudFront
 
 | Section | Experience & Visual Effect |
 |---|---|
-| **Preloader** | Monospace progress counter, animated ghost silhouette, smooth curtain lift |
+| **Preloader** | Monospace progress counter, animated terminal typing out build commands in sync with progress, smooth curtain lift |
 | **Hero** | Interactive ghost character following cursor with click "boo" spin; typewriter cycling through developer specialties; live IST clock and "Open to work" badge |
 | **Marquee** | Dual-track velocity-reactive ticker showcasing core stack and 40+ CRM/ERP integrations |
 | **About** | Text lighting up word-by-word as you read; portrait photo with WebGL duotone shader and ripple hover; interactive code card (`dev.ts`) |

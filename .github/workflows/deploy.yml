@@ -1,0 +1,32 @@
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build project
+        run: npm run build
+        env:
+          # Public URL - it is compiled into the client bundle, so it is not a secret.
+          VITE_API_URL: https://my-portfolio-server-11ub.vercel.app
+
+      - name: Deploy to Firebase
+        run: npx firebase-tools deploy --only hosting:threejs --project my-portfolio-7598c --token ${{ secrets.FIREBASE_TOKEN }}

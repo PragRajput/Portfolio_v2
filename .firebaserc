@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "my-portfolio-7598c"
+  },
+  "targets": {
+    "my-portfolio-7598c": {
+      "hosting": {
+        "threejs": [
+          "prag-portfolio-3d"
+        ]
+      }
+    }
+  }
+}
