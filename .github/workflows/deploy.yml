@@ -30,12 +30,10 @@ jobs:
 
       - name: Deploy to Firebase
         env:
-          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
         run: |
-          if [ -z "$FIREBASE_SERVICE_ACCOUNT" ]; then
-            echo "::error::Secret FIREBASE_SERVICE_ACCOUNT is not set. Add the service account JSON key in Settings > Secrets and variables > Actions."
+          if [ -z "$FIREBASE_TOKEN" ]; then
+            echo "::error::Secret FIREBASE_TOKEN is not set. Generate one with 'firebase login:ci' and add it in Settings > Secrets and variables > Actions."
             exit 1
           fi
-          printf '%s' "$FIREBASE_SERVICE_ACCOUNT" > "$RUNNER_TEMP/firebase-sa.json"
-          export GOOGLE_APPLICATION_CREDENTIALS="$RUNNER_TEMP/firebase-sa.json"
-          npx firebase-tools@15 deploy --only hosting:threejs --project my-portfolio-7598c
+          npx firebase-tools@15 deploy --only hosting:threejs --project my-portfolio-7598c --token "$FIREBASE_TOKEN"
