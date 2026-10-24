@@ -13,7 +13,19 @@ npm install
 npm run dev      # Local dev server -> http://localhost:5173
 npm run build    # Production build -> dist/
 npm run preview  # Preview production build locally
+npm run deploy      # Builds & deploys to Firebase Hosting
+npm run deploy:aws  # Builds & deploys to AWS S3 + CloudFront
+npm run deploy:all  # Both
 ```
+
+---
+
+## Production Deployment (AWS)
+
+- **Live URL**: [https://d5mc1bhs7lp3i.cloudfront.net](https://d5mc1bhs7lp3i.cloudfront.net)
+- **S3 Bucket**: `prag-portfolio-453393997723` (`ap-southeast-2`)
+- **CloudFront Distribution ID**: `E1GA0LZUSAZA5U`
+- **Origin Access Control (OAC)**: `E386JKWRSGCNPU` (`prag-portfolio-oac`)
 
 ---
 
