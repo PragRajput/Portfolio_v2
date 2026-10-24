@@ -1,0 +1,36 @@
+[debug] [2026-10-24T19:50:12.574Z] ----------------------------------------------------------------------
+[debug] [2026-10-24T19:50:12.577Z] Command:       /Users/sdmrfa/.nvm/versions/node/v22.22.0/bin/node /Users/sdmrfa/.bun/bin/firebase deploy --only hosting:threejs
+[debug] [2026-10-24T19:50:12.577Z] CLI Version:   13.34.0
+[debug] [2026-10-24T19:50:12.577Z] Platform:      darwin
+[debug] [2026-10-24T19:50:12.577Z] Node Version:  v22.22.0
+[debug] [2026-10-24T19:50:12.577Z] Time:          Sun Oct 25 2026 01:20:12 GMT+0530 (India Standard Time)
+[debug] [2026-10-24T19:50:12.577Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-10-24T19:50:12.686Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-10-24T19:50:12.686Z] > authorizing via signed-in user (paragdev168@gmail.com)
+[debug] [2026-10-24T19:50:12.686Z] [iam] checking project my-portfolio-7598c for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-10-24T19:50:12.687Z] Checked if tokens are valid: false, expires at: 1792844017048
+[debug] [2026-10-24T19:50:12.687Z] Checked if tokens are valid: false, expires at: 1792844017048
+[debug] [2026-10-24T19:50:12.687Z] > refreshing access token with scopes: []
+[debug] [2026-10-24T19:50:12.688Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-10-24T19:50:12.688Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-10-24T19:50:12.841Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2026-10-24T19:50:12.841Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-10-24T19:50:12.851Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-portfolio-7598c:testIamPermissions [none]
+[debug] [2026-10-24T19:50:12.851Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-portfolio-7598c:testIamPermissions x-goog-quota-user=projects/my-portfolio-7598c
+[debug] [2026-10-24T19:50:12.851Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-portfolio-7598c:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-10-24T19:50:14.289Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-portfolio-7598c:testIamPermissions 200
+[debug] [2026-10-24T19:50:14.289Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-portfolio-7598c:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-10-24T19:50:14.289Z] Checked if tokens are valid: true, expires at: 1792875011841
+[debug] [2026-10-24T19:50:14.289Z] Checked if tokens are valid: true, expires at: 1792875011841
+[debug] [2026-10-24T19:50:14.290Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/my-portfolio-7598c [none]
+[debug] [2026-10-24T19:50:15.019Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/my-portfolio-7598c 200
+[debug] [2026-10-24T19:50:15.019Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/my-portfolio-7598c {"projectId":"my-portfolio-7598c","projectNumber":"98569358237","displayName":"My Portfolio","name":"projects/my-portfolio-7598c","resources":{"hostingSite":"my-portfolio-7598c"},"state":"ACTIVE","labels":{"firebase":"enabled"},"etag":"1_e5d872d4-9b6b-4408-8c71-7a295830aef9"}
+[info] 
+[info] === Deploying to 'my-portfolio-7598c'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2026-10-24T19:50:15.026Z] Checked if tokens are valid: true, expires at: 1792875011841
+[debug] [2026-10-24T19:50:15.026Z] Checked if tokens are valid: true, expires at: 1792875011841
+[debug] [2026-10-24T19:50:15.026Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/prag-portfolio-3d/versions [none]
+[debug] [2026-10-24T19:50:15.026Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/prag-portfolio-3d/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
